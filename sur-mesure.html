@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script>
+    // Redirection instantanée vers l'application React unifiée CROKEA
+    window.location.replace('index.html#sur-mesure');
+  </script>
+  <title>L'Atelier Sur-Mesure & Le Hub Communauté | CROKEA</title>
+  <meta name="description" content="Configurez vos boucles d'oreilles au crochet sur-mesure : formes florales, palettes de coton peigné et perles d'eau douce. Rejoignez le Club privé Crokea."/>
+  
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #fff8f5; }
+    ::-webkit-scrollbar-thumb { background: #d4c3b8; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #82746b; }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-lowest": "#ffffff",
+            "on-error": "#ffffff",
+            "on-surface-variant": "#50443c",
+            "primary": "#3a1d02",
+            "on-error-container": "#93000a",
+            "error": "#ba1a1a",
+            "surface-container-low": "#fff1ea",
+            "on-tertiary": "#ffffff",
+            "on-background": "#261910",
+            "primary-fixed-dim": "#f1bc93",
+            "inverse-primary": "#f1bc93",
+            "background": "#fff8f5",
+            "surface-container-high": "#fee3d4",
+            "on-primary-fixed": "#2f1500",
+            "surface-container-highest": "#f8ddcf",
+            "tertiary": "#132a00",
+            "primary-container": "#543214",
+            "on-secondary-fixed-variant": "#484742",
+            "secondary": "#605e5a",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#ccedac",
+            "surface": "#fff8f5",
+            "surface-dim": "#efd5c6",
+            "outline": "#82746b",
+            "on-primary-container": "#cb9a74",
+            "on-surface": "#261910",
+            "tertiary-container": "#284112",
+            "on-tertiary-fixed": "#0d2000",
+            "outline-variant": "#d4c3b8",
+            "on-tertiary-fixed-variant": "#344e1e",
+            "primary-fixed": "#ffdcc3",
+            "on-primary": "#ffffff",
+            "secondary-container": "#e6e2dc",
+            "error-container": "#ffdad6",
+            "surface-container": "#ffeade",
+            "inverse-surface": "#3d2d23",
+            "inverse-on-surface": "#ffede4",
+            "surface-bright": "#fff8f5",
+            "on-secondary-fixed": "#1d1b18",
+            "tertiary-fixed-dim": "#b1d092",
+            "surface-tint": "#7e5635",
+            "on-secondary-container": "#666460",
+            "secondary-fixed": "#e6e2dc",
+            "on-primary-fixed-variant": "#633e1f",
+            "surface-variant": "#f8ddcf",
+            "secondary-fixed-dim": "#cac6c0",
+            "on-tertiary-container": "#8fae73"
+          },
+          borderRadius: {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-2xl": "4rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "margin": "3rem",
+            "space-md": "1rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem"
+          },
+          fontFamily: {
+            "body-sm": ["Plus Jakarta Sans"],
+            "title-editorial": ["EB Garamond"],
+            "headline-md": ["EB Garamond"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["EB Garamond"],
+            "display-hero-mobile": ["EB Garamond"],
+            "headline-lg": ["EB Garamond"],
+            "headline-sm": ["EB Garamond"],
+            "label-button": ["Plus Jakarta Sans"],
+            "display-hero": ["EB Garamond"],
+            "body-lg": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "body-sm": ["13px", { lineHeight: "18px", fontWeight: "400" }],
+            "title-editorial": ["18px", { lineHeight: "24px", fontWeight: "400" }],
+            "headline-md": ["28px", { lineHeight: "36px", fontWeight: "500" }],
+            "body-md": ["15px", { lineHeight: "22px", fontWeight: "400" }],
+            "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "600" }],
+            "headline-lg-mobile": ["28px", { lineHeight: "34px", fontWeight: "500" }],
+            "display-hero-mobile": ["36px", { lineHeight: "42px", letterSpacing: "0", fontWeight: "400" }],
+            "headline-lg": ["40px", { lineHeight: "48px", fontWeight: "500" }],
+            "headline-sm": ["22px", { lineHeight: "28px", fontWeight: "600" }],
+            "label-button": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "body-lg": ["17px", { lineHeight: "26px", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-fixed-dim selection:text-primary">
+
+  <!-- HEADER NAVIGATION FIXE -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-surface/90 backdrop-blur-md shadow-[0_4px_24px_rgba(43,29,20,0.05)] border-b border-outline-variant/20">
+    <div class="h-20 max-w-[1280px] mx-auto px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md">
+      
+      <!-- Logo & Nom de Marque -->
+      <a href="index.html" class="flex items-center gap-space-sm group">
+        <div class="relative w-10 h-10 rounded-full overflow-hidden bg-white shadow-sm ring-1 ring-outline-variant/40 flex items-center justify-center p-0.5 group-hover:scale-105 transition-transform">
+          <img alt="Logo CROKEA" class="w-full h-full object-cover mix-blend-multiply" src="assets/logo.jpg"/>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-title-editorial text-title-editorial tracking-[0.18em] uppercase text-primary font-semibold select-none">CROKEA</span>
+          <span class="font-label-caps text-[9px] uppercase tracking-widest text-tertiary-container -mt-1 hidden sm:block">Haute Maille</span>
+        </div>
+      </a>
+
+      <!-- Navigation Bureau -->
+      <nav class="hidden xl:flex items-center gap-space-lg">
+        <a class="font-label-button text-label-button text-on-surface-variant hover:text-primary transition-colors py-1" href="index.html">Accueil</a>
+        <a class="font-label-button text-label-button text-on-surface-variant hover:text-primary transition-colors py-1" href="index.html#galerie-collections">Collections</a>
+        <a class="font-label-button text-label-button text-on-surface-variant hover:text-primary transition-colors py-1" href="produit.html?id=crk-02">Modèle Signature</a>
+        <a aria-current="page" class="transition-colors py-1 text-primary font-semibold border-b-2 border-primary" href="sur-mesure.html">Sur-Mesure</a>
+        <a class="font-label-button text-label-button text-on-surface-variant hover:text-primary transition-colors py-1" href="index.html#savoir-faire">Savoir-Faire</a>
+        <a class="font-label-button text-label-button text-on-surface-variant hover:text-primary transition-colors py-1" href="#hub-communaute">Communauté</a>
+      </nav>
+
+      <!-- Actions Header -->
+      <div class="flex items-center gap-space-sm sm:gap-space-md">
+        <a class="hidden md:inline-flex items-center gap-space-xs bg-tertiary-container text-on-tertiary rounded-full px-space-md py-space-xs font-label-caps text-label-caps uppercase transition-all duration-300 hover:bg-tertiary shadow-[0_2px_12px_rgba(43,29,20,0.08)] transform hover:-translate-y-0.5" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+          <span class="material-symbols-outlined text-[16px]">chat</span>
+          <span>Le Club WhatsApp</span>
+        </a>
+
+        <!-- Bouton Panier Écrin avec Badge Dynamique -->
+        <button type="button" class="open-cart-btn relative flex items-center justify-center w-10 h-10 rounded-full bg-surface-container hover:bg-surface-container-high text-primary-container transition-all shadow-sm" title="Ouvrir mon écrin">
+          <span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+          <span class="cart-count-badge absolute -top-1 -right-1 w-5 h-5 rounded-full bg-tertiary-container text-on-tertiary font-label-caps text-[10px] hidden items-center justify-center font-bold shadow-md">0</span>
+        </button>
+
+        <div class="relative group hidden sm:flex items-center">
+          <div class="p-[2px] rounded-full bg-surface-container-high transition-transform duration-300 group-hover:scale-105">
+            <img alt="L'Atelier Crokea" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFGWfdl1sWMb4zH9w4_gQYMAaKZfs8RWGeZG0w71ZBK9IYxltJIijsyeF3kO4zFyHnAIbn7E76wYRLeS5X2lzk7ucb355zYET4Qx0Se9XiiL4tTwYcgYdeT1EMk6OebwNodj1sqpdgX4Uhrd0oga_I_n1ftewMTD7dVKDuZQiWadKH1nIDqGIo-K7LiXLzxE0DRoVPafRHOjh7ayeruGRCBxCuH1kLubqmkXs7thr7"/>
+          </div>
+          <span class="pointer-events-none absolute right-0 top-12 whitespace-nowrap rounded-DEFAULT bg-primary-container px-space-sm py-1 font-body-sm text-body-sm text-on-primary-container opacity-0 transition-opacity duration-200 group-hover:opacity-100 shadow-[0_4px_16px_rgba(43,29,20,0.12)]">L'Atelier Crokea</span>
+        </div>
+
+        <button id="mobile-menu-toggle" class="xl:hidden flex items-center justify-center w-10 h-10 rounded-full bg-surface-container text-primary-container hover:bg-surface-container-high transition-colors" aria-label="Menu de navigation">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main class="w-full pt-20 bg-surface">
+    <div class="flex flex-col w-full">
+
+      <!-- En-tête éditorial de l'atelier -->
+      <section class="relative w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+          <div class="max-w-3xl space-y-space-sm">
+            <div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high text-primary border border-outline-variant/30">
+              <span class="material-symbols-outlined text-[16px]">edit_note</span>
+              <span class="font-label-caps text-label-caps uppercase tracking-wider">Couture d'Art &amp; Pièces Numérotées</span>
+            </div>
+            <h1 class="font-headline-lg text-headline-lg text-primary-container leading-tight">
+              L'Atelier Personnalisé &amp; La Communauté Crokea
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl pt-space-xs">
+              Vous avez une tenue spécifique pour un mariage, une célébration ou une envie d'association de couleurs inédite ? Composez vos boucles d'oreilles sur-mesure ou échangez directement avec notre créatrice.
+            </p>
+          </div>
+
+          <div class="flex items-center gap-space-md bg-surface-container-low px-space-md py-space-sm rounded-lg shadow-sm border border-outline-variant/30 shrink-0">
+            <div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container font-headline-sm font-semibold">
+              3h
+            </div>
+            <div>
+              <p class="font-label-caps text-label-caps uppercase text-primary">Temps moyen de tissage</p>
+              <p class="font-body-sm text-body-sm text-on-surface-variant">Fil de coton végétal &amp; perle cousue main</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Module Interactif Pas-à-Pas (Atelier Sur-Mesure) -->
+      <section class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-lg">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+          
+          <!-- Colonne d'interaction : Choix et étapes (7 colonnes) -->
+          <div class="lg:col-span-7 space-y-space-xl">
+            
+            <!-- Étape 1 : Forme Florale -->
+            <div class="space-y-space-md bg-surface-container-lowest p-space-lg rounded-lg shadow-sm border border-outline-variant/30">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-sm">
+                  <span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps flex items-center justify-center font-bold">1</span>
+                  <h2 class="font-headline-sm text-headline-sm text-primary">Choisir la Forme Florale au Crochet</h2>
+                </div>
+                <span class="font-label-caps text-label-caps text-tertiary-container uppercase tracking-wider">Maille Fine</span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="shape-options">
+                
+                <!-- Option 1 : Rosace -->
+                <button class="shape-btn group text-left p-space-sm rounded-DEFAULT bg-surface-container transition-all hover:bg-surface-container-high cursor-pointer border border-outline-variant/20" data-shape="rosace" data-title="Rosace Romantique" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuDC3lFg9xHlltWmpeMt91yMDjkzjfwXkvlnRB7YY7idN_Zj35AIBXJIrZhdgmo-JhPf492eAIy_nAk_c8epO8nU98A2VpCC_7q1iStXMFefqMVD34D1vVlv_NWUKCO5DHp6iMX0flKNjT25RvCGzXKeKyMC0H8WD-lny1pDDm_KQV4siWSMDz8jGs5pco5TT-AEIwAa_ESRkiN5UGHShZwTuD5ewQ05Vae0H5skJfkA" type="button">
+                  <div class="w-full aspect-square rounded-DEFAULT bg-surface-container-highest mb-space-xs overflow-hidden relative">
+                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Rosace Romantique au crochet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC3lFg9xHlltWmpeMt91yMDjkzjfwXkvlnRB7YY7idN_Zj35AIBXJIrZhdgmo-JhPf492eAIy_nAk_c8epO8nU98A2VpCC_7q1iStXMFefqMVD34D1vVlv_NWUKCO5DHp6iMX0flKNjT25RvCGzXKeKyMC0H8WD-lny1pDDm_KQV4siWSMDz8jGs5pco5TT-AEIwAa_ESRkiN5UGHShZwTuD5ewQ05Vae0H5skJfkA"/>
+                    <span class="shape-indicator absolute top-2 right-2 w-5 h-5 rounded-full bg-surface-container-lowest text-primary hidden items-center justify-center shadow-sm">
+                      <span class="material-symbols-outlined text-[14px]">check</span>
+                    </span>
+                  </div>
+                  <p class="font-title-editorial text-title-editorial text-primary font-medium">Rosace Romantique</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Multi-couches de pétales</p>
+                </button>
+
+                <!-- Option 2 : Trèfle (Actif par défaut) -->
+                <button class="shape-btn is-active group text-left p-space-sm rounded-DEFAULT bg-surface-container-high transition-all shadow-sm cursor-pointer ring-2 ring-primary-container border border-outline-variant/30" data-shape="trefle" data-title="Trèfle Porte-Bonheur" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuBOJOy5D3ydCK9SfZveTmOXj-VPn0v3UXo8vrvVkuOV48AmNL9r5LqMeduZ5FHlKO4XK0Xa_uDX0ncHwB9bq9GY6tQO1LRE65ADz-xAZfwCAi8LOJGTh3X5BYGLT9AhCD39XK-yWrYBPTXkQJNoUph0VBwfqWj3joIWjggkOz3ZafdSOe3bD0R5KA6uQw5NzY4wHMk-pSZrKSOF45uOpeuL1GdmwgPXZwXXXzYbdVSa" type="button">
+                  <div class="w-full aspect-square rounded-DEFAULT bg-surface-container-highest mb-space-xs overflow-hidden relative">
+                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Trèfle Porte-Bonheur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATyJnn8xS-Pg-MMdb-cbkIi81qnIfO5nhDb18EuLnAR2mbw7zZRfc3EwO6yp89wr1CMfbjsw_hN_yPJoHfw0T6dHDgTjDO1yncjKhryWV1IoQLoDEwAKn9LwD-ZVZsAHTqQZhK7WgkSWI2XAtvM2DNQtryVivEffqi2K7Jyjd3ghKLsYRw-vIMucEM8Ysd2xZLeirtoKocM7WGvhfQGGqP3HwUYLU72LhljL5aIaLk"/>
+                    <span class="shape-indicator absolute top-2 right-2 w-5 h-5 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shadow-sm">
+                      <span class="material-symbols-outlined text-[14px]">check</span>
+                    </span>
+                  </div>
+                  <p class="font-title-editorial text-title-editorial text-primary font-medium">Trèfle Porte-Bonheur</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Symétrie à 4 lobes</p>
+                </button>
+
+                <!-- Option 3 : Disque Floral -->
+                <button class="shape-btn group text-left p-space-sm rounded-DEFAULT bg-surface-container transition-all hover:bg-surface-container-high cursor-pointer border border-outline-variant/20" data-shape="disque" data-title="Disque Floral Ajouré" data-img="https://lh3.googleusercontent.com/aida-public/AB6AXuA9y7uSiiq-c8sw9NsD5uwIp9A_j8MpAJFNdpqQU5pbh1t5AIglswywkNrsxO-iDeUYwez1hbaMyH4DWkTn_v6wvpfdJg2o_wk0r9WbacraLEVj_z7NbYuBQP_hTLeZRPX6kOQtTC1jUYHFPkEM-eNI2gDZ7pkaoqWe7cfXdvSff8W1q5KDXqyHxkEZfZBdzXWT9hRq-H5gdWBHh99kGwHgQlPlUif3G-3kWe9Quj9q" type="button">
+                  <div class="w-full aspect-square rounded-DEFAULT bg-surface-container-highest mb-space-xs overflow-hidden relative">
+                    <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Disque Floral Ajouré" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9y7uSiiq-c8sw9NsD5uwIp9A_j8MpAJFNdpqQU5pbh1t5AIglswywkNrsxO-iDeUYwez1hbaMyH4DWkTn_v6wvpfdJg2o_wk0r9WbacraLEVj_z7NbYuBQP_hTLeZRPX6kOQtTC1jUYHFPkEM-eNI2gDZ7pkaoqWe7cfXdvSff8W1q5KDXqyHxkEZfZBdzXWT9hRq-H5gdWBHh99kGwHgQlPlUif3G-3kWe9Quj9q"/>
+                    <span class="shape-indicator absolute top-2 right-2 w-5 h-5 rounded-full bg-surface-container-lowest text-primary hidden items-center justify-center shadow-sm">
+                      <span class="material-symbols-outlined text-[14px]">check</span>
+                    </span>
+                  </div>
+                  <p class="font-title-editorial text-title-editorial text-primary font-medium">Disque Floral Ajouré</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Style Bohème Chic</p>
+                </button>
+
+              </div>
+            </div>
+
+            <!-- Étape 2 : Palette de Coton -->
+            <div class="space-y-space-md bg-surface-container-lowest p-space-lg rounded-lg shadow-sm border border-outline-variant/30">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-sm">
+                  <span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps flex items-center justify-center font-bold">2</span>
+                  <h2 class="font-headline-sm text-headline-sm text-primary">Sélectionner la Palette de Coton</h2>
+                </div>
+                <span class="font-body-sm text-body-sm text-on-surface-variant font-medium" id="selected-palette-label">Émeraude &amp; Ivoire</span>
+              </div>
+
+              <div class="flex flex-wrap gap-space-sm" id="palette-options">
+                <button class="palette-btn is-active inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary shadow-sm transition-all" data-palette="Émeraude &amp; Ivoire" type="button">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#284112] ring-1 ring-white"></span>
+                  <span class="font-label-button text-label-button">Émeraude &amp; Ivoire</span>
+                </button>
+
+                <button class="palette-btn inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface transition-all hover:bg-surface-container-high" data-palette="Rose Poudré &amp; Nacre" type="button">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#E8C2B8] ring-1 ring-outline"></span>
+                  <span class="font-label-button text-label-button">Rose Poudré &amp; Nacre</span>
+                </button>
+
+                <button class="palette-btn inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface transition-all hover:bg-surface-container-high" data-palette="Ocre Solaire &amp; Terre cuite" type="button">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#B45A3C] ring-1 ring-outline"></span>
+                  <span class="font-label-button text-label-button">Ocre Solaire &amp; Terre cuite</span>
+                </button>
+
+                <button class="palette-btn inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface transition-all hover:bg-surface-container-high" data-palette="Bleu Nuit &amp; Or blanc" type="button">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#1A2E40] ring-1 ring-outline"></span>
+                  <span class="font-label-button text-label-button">Bleu Nuit &amp; Or blanc</span>
+                </button>
+
+                <button class="palette-btn inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface transition-all hover:bg-surface-container-high" data-palette="Lavande Douce &amp; Perle" type="button">
+                  <span class="w-3.5 h-3.5 rounded-full bg-[#C8B8DB] ring-1 ring-outline"></span>
+                  <span class="font-label-button text-label-button">Lavande Douce &amp; Perle</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Étape 3 : Cœur & Fermoir -->
+            <div class="space-y-space-md bg-surface-container-lowest p-space-lg rounded-lg shadow-sm border border-outline-variant/30">
+              <div class="flex items-center gap-space-sm">
+                <span class="w-7 h-7 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps flex items-center justify-center font-bold">3</span>
+                <h2 class="font-headline-sm text-headline-sm text-primary">Choisir le Cœur Minéral &amp; la Monture</h2>
+              </div>
+
+              <div class="space-y-space-md">
+                <div>
+                  <p class="font-label-caps text-label-caps uppercase text-on-surface-variant mb-space-xs">Ornement Central</p>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="center-options">
+                    
+                    <button class="center-btn is-active text-left p-space-sm rounded-DEFAULT bg-surface-container-high shadow-sm ring-2 ring-primary-container transition-all flex items-start gap-space-xs border border-outline-variant/30" data-center="Perle d'eau douce centrale ronde" type="button">
+                      <span class="material-symbols-outlined text-primary-container mt-0.5 text-[20px]">lens</span>
+                      <div>
+                        <p class="font-label-button text-label-button text-primary">Perle ronde</p>
+                        <p class="font-body-sm text-[12px] text-on-surface-variant">Eau douce nacrée</p>
+                      </div>
+                    </button>
+
+                    <button class="center-btn text-left p-space-sm rounded-DEFAULT bg-surface-container transition-all hover:bg-surface-container-high flex items-start gap-space-xs border border-outline-variant/20" data-center="Perle baroque irrégulière" type="button">
+                      <span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">grain</span>
+                      <div>
+                        <p class="font-label-button text-label-button text-primary">Perle baroque</p>
+                        <p class="font-body-sm text-[12px] text-on-surface-variant">Lustre organique</p>
+                      </div>
+                    </button>
+
+                    <button class="center-btn text-left p-space-sm rounded-DEFAULT bg-surface-container transition-all hover:bg-surface-container-high flex items-start gap-space-xs border border-outline-variant/20" data-center="Mini cabochon doré martelé" type="button">
+                      <span class="material-symbols-outlined text-secondary mt-0.5 text-[20px]">circle</span>
+                      <div>
+                        <p class="font-label-button text-label-button text-primary">Cabochon doré</p>
+                        <p class="font-body-sm text-[12px] text-on-surface-variant">Laiton martelé</p>
+                      </div>
+                    </button>
+
+                  </div>
+                </div>
+
+                <div class="pt-space-xs">
+                  <p class="font-label-caps text-label-caps uppercase text-on-surface-variant mb-space-xs">Métal de l'attache</p>
+                  <div class="flex flex-wrap gap-space-sm" id="metal-options">
+                    <button class="metal-btn is-active inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary" data-metal="Crochet or fin 24k" type="button">
+                      <span class="material-symbols-outlined text-[18px]">verified</span>
+                      <span class="font-label-button text-label-button">Crochet or fin 24k</span>
+                    </button>
+                    <button class="metal-btn inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high" data-metal="Crochet argent sterling 925" type="button">
+                      <span class="material-symbols-outlined text-[18px]">fiber_manual_record</span>
+                      <span class="font-label-button text-label-button">Crochet argent 925</span>
+                    </button>
+                    <button class="metal-btn inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high" data-metal="Clips confort (oreilles non percées)" type="button">
+                      <span class="material-symbols-outlined text-[18px]">earbuds</span>
+                      <span class="font-label-button text-label-button">Clips confort</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Étape 4 : Précision / Message libre -->
+                <div class="pt-space-xs">
+                  <label for="custom-note" class="font-label-caps text-label-caps uppercase text-on-surface-variant block mb-space-xs">Note ou souhait particulier (optionnel)</label>
+                  <textarea id="custom-note" rows="2" class="w-full rounded-DEFAULT p-space-sm bg-surface-container border border-outline-variant/30 text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Ex: J'aimerais assortir ces boucles à une robe vert sauge pour un baptême..."></textarea>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Colonne Résumé dynamique & Déclencheur WhatsApp (5 colonnes) -->
+          <div class="lg:col-span-5 sticky top-24 space-y-space-md">
+            <div class="bg-surface-container-lowest rounded-lg p-space-lg shadow-md space-y-space-md relative overflow-hidden border border-outline-variant/30">
+              
+              <div class="flex items-center justify-between pb-space-xs border-b border-outline-variant/20">
+                <span class="font-label-caps text-label-caps uppercase text-tertiary-container tracking-wider font-semibold">Fiche Atelier Numérotée</span>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Édition Unique</span>
+              </div>
+
+              <!-- Aperçu visuel texturé du bijou composé -->
+              <div class="relative w-full aspect-[4/3] rounded-DEFAULT bg-surface-container-low overflow-hidden flex items-center justify-center p-space-md">
+                <img id="preview-image" class="w-full h-full object-cover rounded-DEFAULT transition-all duration-300" alt="Aperçu de la création sur-mesure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOJOy5D3ydCK9SfZveTmOXj-VPn0v3UXo8vrvVkuOV48AmNL9r5LqMeduZ5FHlKO4XK0Xa_uDX0ncHwB9bq9GY6tQO1LRE65ADz-xAZfwCAi8LOJGTh3X5BYGLT9AhCD39XK-yWrYBPTXkQJNoUph0VBwfqWj3joIWjggkOz3ZafdSOe3bD0R5KA6uQw5NzY4wHMk-pSZrKSOF45uOpeuL1GdmwgPXZwXXXzYbdVSa"/>
+                <div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded-full shadow-sm border border-outline-variant/30">
+                  <span id="preview-tag" class="font-label-caps text-label-caps text-primary uppercase font-medium">Trèfle • Émeraude &amp; Ivoire</span>
+                </div>
+              </div>
+
+              <!-- Données de synthèse -->
+              <div class="space-y-space-xs bg-surface-container p-space-md rounded-DEFAULT">
+                <div class="flex justify-between items-center text-body-sm">
+                  <span class="text-on-surface-variant">Motif choisi :</span>
+                  <span class="font-medium text-primary text-right" id="summary-shape">Trèfle Porte-Bonheur</span>
+                </div>
+                <div class="flex justify-between items-center text-body-sm">
+                  <span class="text-on-surface-variant">Nuances de fil :</span>
+                  <span class="font-medium text-primary text-right" id="summary-palette">Émeraude &amp; Ivoire</span>
+                </div>
+                <div class="flex justify-between items-center text-body-sm">
+                  <span class="text-on-surface-variant">Cœur &amp; Fermoir :</span>
+                  <span class="font-medium text-primary text-right" id="summary-heart">Perle ronde • Crochet or fin</span>
+                </div>
+                <div class="pt-space-xs flex justify-between items-center border-t border-outline-variant/20">
+                  <span class="font-body-sm text-body-sm text-on-surface-variant">Délais d'atelier :</span>
+                  <span class="font-label-caps text-label-caps text-tertiary-container uppercase font-semibold">3 à 5 jours ouvrés</span>
+                </div>
+              </div>
+
+              <!-- Bloc tarif & estimation -->
+              <div class="flex items-baseline justify-between pt-space-xs border-t border-outline-variant/20">
+                <div>
+                  <p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Tarif estimé</p>
+                  <p class="font-headline-md text-headline-md text-primary font-semibold">19 000 FCFA <span class="text-body-md font-normal text-on-surface-variant">/ 29 €</span></p>
+                </div>
+                <span class="font-body-sm text-body-sm text-on-surface-variant text-right max-w-[140px]">Création sur mesure &amp; pochon personnalisé</span>
+              </div>
+
+              <!-- Actions : Ajouter au panier + WhatsApp -->
+              <div class="space-y-space-sm pt-space-xs">
+                <button type="button" id="btn-add-custom-to-cart" class="w-full inline-flex items-center justify-center gap-space-xs bg-primary-container hover:bg-primary text-on-primary rounded-full py-3 px-space-lg font-label-button text-label-button shadow-md transition-all duration-300">
+                  <span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                  <span>Ajouter cette pièce à mon écrin</span>
+                </button>
+
+                <a id="whatsapp-order-cta" href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-space-xs bg-tertiary-container hover:bg-tertiary text-on-tertiary rounded-full py-3.5 px-space-lg shadow-md transition-all duration-300 transform active:scale-95 group text-center">
+                  <span class="material-symbols-outlined text-[22px] transition-transform group-hover:scale-110">chat</span>
+                  <span class="font-label-button text-label-button">Envoyer mon projet sur WhatsApp</span>
+                </a>
+              </div>
+
+              <p class="font-body-sm text-body-sm text-on-surface-variant text-center">
+                Transmet immédiatement votre configuration détaillée dans notre chat WhatsApp pour validation avec l'artisan.
+              </p>
+            </div>
+
+            <!-- Note de l'artisane -->
+            <div class="bg-surface-container-low p-space-md rounded-lg flex items-center gap-space-md border border-outline-variant/30">
+              <span class="material-symbols-outlined text-primary-container text-[28px] shrink-0">handshake</span>
+              <p class="font-body-sm text-body-sm text-on-surface">
+                Chaque paire sur-mesure est précédée d'une photo de validation envoyée en message direct avant l'assemblage final.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Espace Communauté & Cercle Privé ("Le Hub Crokea") -->
+      <section class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-2xl border-t border-outline-variant/20" id="hub-communaute">
+        <div class="text-center max-w-xl mx-auto space-y-space-xs mb-space-xl">
+          <span class="font-label-caps text-label-caps text-primary uppercase tracking-widest font-semibold">Le Hub Crokea</span>
+          <h2 class="font-headline-lg text-headline-lg text-primary">Rejoindre la Communauté &amp; le Cercle Privé</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Découvrez les coulisses de la création au crochet, participez aux choix des matières et profitez d'avantages réservés à nos membres.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+          
+          <!-- Carte 1 : Groupe VIP WhatsApp -->
+          <div class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col justify-between relative overflow-hidden group border border-outline-variant/30">
+            <div class="space-y-space-md">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-tertiary-container text-on-tertiary font-label-caps text-label-caps uppercase">
+                  <span class="material-symbols-outlined text-[14px]">stars</span>
+                  <span>Accès Exclusif &amp; Ventes Privées</span>
+                </span>
+                <span class="material-symbols-outlined text-tertiary-container text-[24px]">group_add</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Groupe VIP WhatsApp Crokea</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Un cercle intime regroupant nos clientes passionnées et amatrices de bijoux textiles d'exception.
+              </p>
+              <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+                <li class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-tertiary-container text-[18px]">check_circle</span>
+                  <span>Accès 24h avant tout le monde aux séries limitées</span>
+                </li>
+                <li class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-tertiary-container text-[18px]">check_circle</span>
+                  <span>Votes consultatifs sur les prochains coloris de fils</span>
+                </li>
+                <li class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-tertiary-container text-[18px]">check_circle</span>
+                  <span>Tutoriels exclusifs et conseils de stylisme vestimentaire</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pt-space-lg">
+              <a class="w-full inline-flex items-center justify-center gap-space-xs bg-tertiary-container hover:bg-tertiary text-on-tertiary rounded-full py-3 px-space-lg transition-all shadow-sm group-hover:shadow-md font-label-button text-label-button" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-[18px]">forum</span>
+                <span>Intégrer le groupe VIP WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Carte 2 : Page Facebook -->
+          <div class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col justify-between relative overflow-hidden group border border-outline-variant/30">
+            <div class="space-y-space-md">
+              <div class="flex items-center justify-between">
+                <span class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps uppercase">
+                  <span class="material-symbols-outlined text-[14px]">photo_camera</span>
+                  <span>Galerie Clientes &amp; Conseils Mode</span>
+                </span>
+                <span class="material-symbols-outlined text-primary-container text-[24px]">public</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-primary">Page Officielle Facebook Crokea</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Le carnet visuel de la marque : inspirez-vous des photos portées et partagez vos retours avec d'autres passionnées.
+              </p>
+              <ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant pt-space-xs">
+                <li class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+                  <span>Photos régulières de clientes portant leurs parures</span>
+                </li>
+                <li class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+                  <span>Vidéos des coulisses de l'atelier et gestes du crochet</span>
+                </li>
+                <li class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-primary-container text-[18px]">check_circle</span>
+                  <span>Avis vérifiés et échanges directs avec la communauté</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pt-space-lg">
+              <a class="w-full inline-flex items-center justify-center gap-space-xs bg-surface-container hover:bg-surface-container-high text-primary-container rounded-full py-3 px-space-lg transition-all shadow-sm font-label-button text-label-button" href="https://facebook.com/" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-[18px]">thumb_up</span>
+                <span>Rejoindre la page Facebook</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Témoignages & Avis d'Atelier -->
+      <section class="w-full max-w-[1280px] mx-auto px-margin-mobile lg:px-margin pb-space-2xl">
+        <div class="bg-surface-container-low rounded-xl p-space-lg lg:p-space-xl border border-outline-variant/30">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+            <div>
+              <span class="font-label-caps text-label-caps text-primary uppercase tracking-wider font-semibold">Avis Vérifiés</span>
+              <h2 class="font-headline-md text-headline-md text-primary">Ce que disent nos clientes de l'Atelier</h2>
+            </div>
+            <div class="flex items-center gap-1 text-amber-600">
+              <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="font-body-sm text-body-sm text-primary font-semibold ml-2">5.0 / 5</span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+            
+            <!-- Témoignage 1 -->
+            <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between border border-outline-variant/30">
+              <div class="space-y-space-sm">
+                <div class="flex text-amber-600 text-sm">
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-title-editorial text-title-editorial italic text-primary font-medium">
+                  « Boucles ultra légères et raffinées »
+                </p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Je les ai portées toute la journée pour le mariage de ma sœur sans ressentir aucune gêne. Le crochet est délicat et la tenue des pétales est remarquable.
+                </p>
+              </div>
+              <div class="flex items-center gap-space-xs pt-space-md border-t border-outline-variant/20 mt-space-md">
+                <img class="w-9 h-9 rounded-full object-cover" alt="Claire M." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7SOEp7WzFujEbKf_SR_AHn6kY9tvxnpn-4VGhM_bf6nXpOFTcDTCWQE_nt_aVAcGFh1DHks4hV94xKIWiN4pYMcPda_C8Za2KKsEIr_Y2qiELjmVsXy6_2XIcs2XyZIpkuFdCs2IuBCvePkKoILr5rTNUGl88CLqbGnfnHrQ90JASKAyfTJvKXjDUevxJFlbTbMW3SSgbg1paXHmiw10JRa5uB4us149sfjDzjuhy"/>
+                <div>
+                  <p class="font-label-button text-[13px] text-primary">Claire M.</p>
+                  <p class="font-body-sm text-[11px] text-on-surface-variant">Modèle Rosace Émeraude</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Témoignage 2 -->
+            <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between border border-outline-variant/30">
+              <div class="space-y-space-sm">
+                <div class="flex text-amber-600 text-sm">
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-title-editorial text-title-editorial italic text-primary font-medium">
+                  « La commande sur-mesure sur WhatsApp est parfaite »
+                </p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  L'artisane m'a envoyé deux photos de nuanciers pour accorder exactement mes boucles avec le lin de ma robe. Suivi attentionné et envoi soigné.
+                </p>
+              </div>
+              <div class="flex items-center gap-space-xs pt-space-md border-t border-outline-variant/20 mt-space-md">
+                <img class="w-9 h-9 rounded-full object-cover" alt="Aïssatou D." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtvvpmH0pq62RHXiOD9RYsiPn0cdDjI32avWeM_Th7_74RiSSNMC_2DtqsNWoGF2h3_iqldlZDCm3537wNIR-_GIt9_OvafcVE6hSxADCnLaB41KAM3iDRESpawoPe9-Hzl2XvDkwXZQxt-o8ZYy9Jpr_HxrMVzqVuIzFQvtk2kCnRyGKrbSvddEqHOfv7IX3Y217thRiF6dKG_HJexXrBezng8nK6bytRsDRD6FD0"/>
+                <div>
+                  <p class="font-label-button text-[13px] text-primary">Aïssatou D.</p>
+                  <p class="font-body-sm text-[11px] text-on-surface-variant">Commande personnalisée</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Témoignage 3 -->
+            <div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between border border-outline-variant/30">
+              <div class="space-y-space-sm">
+                <div class="flex text-amber-600 text-sm">
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                  <span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                </div>
+                <p class="font-title-editorial text-title-editorial italic text-primary font-medium">
+                  « Des finitions parfaites, la perle est magnifique »
+                </p>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  L'écrin sent bon la cire d'abeille et les apprêts en or fin ne provoquent aucune allergie. On sent l'amour et le temps passé sur chaque maille.
+                </p>
+              </div>
+              <div class="flex items-center gap-space-xs pt-space-md border-t border-outline-variant/20 mt-space-md">
+                <img class="w-9 h-9 rounded-full object-cover" alt="Élodie V." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnKfAJbb1NuYAaPjGpsxSIOSvZxcob9CtsIUcQ9sBgswOqzd_eFgsaXxDqph0n-YCQ4xcyKWAKYVcFcEBJyl-2mJZ1PF4UwVVbYH-9OOq5QOJNxIPowl78bl9mneNlEjOluX-pzLUYGomd1vbR59SqtvG-4R9W3kY4jrIiDvVNJHqk34ZBUabhEHhWDVtlwfcnCbywdjpb1yWcPcEILMTBJ0bV7go9Ytrm2sL3CBTI"/>
+                <div>
+                  <p class="font-label-button text-[13px] text-primary">Élodie V.</p>
+                  <p class="font-body-sm text-[11px] text-on-surface-variant">Modèle Trèfle Nacre</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- OVERLAY PANIER ÉCRIN -->
+  <div id="crokea-cart-overlay" class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <!-- VOLET LATÉRAL PANIER ÉCRIN -->
+  <aside id="crokea-cart-drawer" class="fixed top-0 right-0 h-full w-full sm:w-[440px] bg-surface z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col border-l border-outline-variant/30">
+    <div class="p-space-lg border-b border-outline-variant/30 flex items-center justify-between bg-surface-container-lowest">
+      <div class="flex items-center gap-space-xs">
+        <span class="material-symbols-outlined text-primary-container text-[24px]">shopping_bag</span>
+        <div>
+          <h3 class="font-headline-sm text-headline-sm text-primary">Votre Écrin Artisanal</h3>
+          <p class="font-body-sm text-[12px] text-on-surface-variant" id="cart-drawer-count">(0 pièce)</p>
+        </div>
+      </div>
+      <button id="close-cart-btn" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary-container hover:bg-surface-container-high transition-colors" type="button">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+
+    <div class="flex-1 overflow-y-auto p-space-md space-y-space-sm" id="cart-items-container"></div>
+
+    <div id="cart-empty-state" class="flex-1 flex flex-col items-center justify-center p-space-xl text-center">
+      <div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container mb-space-md">
+        <span class="material-symbols-outlined text-[32px]">spa</span>
+      </div>
+      <h4 class="font-headline-sm text-headline-sm text-primary mb-1">Votre écrin est vide</h4>
+      <p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mb-space-lg">
+        Laissez-vous séduire par nos créations d'exception en coton d'Égypte et perles fines.
+      </p>
+      <a href="index.html#galerie-collections" onclick="window.crokeaCart.closeDrawer()" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-primary-container text-on-primary font-label-button text-label-button shadow-sm hover:bg-primary transition-colors">
+        <span>Découvrir la collection</span>
+        <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+      </a>
+    </div>
+
+    <div id="cart-footer-summary" class="p-space-lg bg-surface-container-lowest border-t border-outline-variant/30 space-y-space-sm">
+      <div class="space-y-1">
+        <div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+          <span>Confection à l'atelier :</span>
+          <span class="font-medium text-primary">~3h de tissage / pièce</span>
+        </div>
+        <div class="flex items-center justify-between text-body-sm text-on-surface-variant">
+          <span>Écrin &amp; certificat :</span>
+          <span class="text-tertiary-container font-medium">Offert avec pochon lin</span>
+        </div>
+        <div class="pt-2 border-t border-outline-variant/20 flex items-baseline justify-between">
+          <div>
+            <span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Total Estimé</span>
+            <p id="cart-total-fcfa" class="font-headline-md text-headline-md text-primary font-semibold leading-tight">0 FCFA</p>
+          </div>
+          <span id="cart-total-eur" class="font-title-editorial text-title-editorial text-on-surface-variant italic">soit env. 0 €</span>
+        </div>
+      </div>
+
+      <a id="cart-whatsapp-checkout" href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-tertiary-container hover:bg-tertiary text-on-tertiary rounded-full py-3.5 px-space-md font-label-button text-label-button shadow-md transition-all duration-300 transform active:scale-[0.99] text-center">
+        <span class="material-symbols-outlined text-[20px]">chat</span>
+        <span>Valider ma commande sur WhatsApp</span>
+      </a>
+      <p class="font-body-sm text-[11px] text-center text-on-surface-variant">
+        Transmission directe et sécurisée avec l'artisane Crokea.
+      </p>
+    </div>
+  </aside>
+
+  <!-- OVERLAY MENU MOBILE -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+  <!-- MENU MOBILE TIROIR -->
+  <aside id="mobile-menu-drawer" class="fixed top-0 left-0 h-full w-[300px] bg-surface z-50 shadow-2xl transform -translate-x-full transition-transform duration-300 flex flex-col p-space-lg">
+    <div class="flex items-center justify-between pb-space-lg border-b border-outline-variant/30">
+      <div class="flex items-center gap-space-xs">
+        <img src="assets/logo.jpg" alt="Logo Crokea" class="h-9 w-9 rounded-full object-cover mix-blend-multiply border border-primary/20"/>
+        <span class="font-title-editorial text-title-editorial tracking-[0.18em] uppercase text-primary font-semibold">CROKEA</span>
+      </div>
+      <button id="close-mobile-menu-btn" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary-container" type="button">
+        <span class="material-symbols-outlined text-[18px]">close</span>
+      </button>
+    </div>
+
+    <nav class="flex flex-col gap-space-md py-space-xl flex-1 font-label-button text-label-button">
+      <a href="index.html" class="py-2 text-on-surface-variant hover:text-primary border-b border-outline-variant/10 flex items-center justify-between">
+        <span>Accueil</span>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+      </a>
+      <a href="index.html#galerie-collections" class="py-2 text-on-surface-variant hover:text-primary border-b border-outline-variant/10 flex items-center justify-between">
+        <span>Collections Bijoux</span>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+      </a>
+      <a href="produit.html?id=crk-02" class="py-2 text-on-surface-variant hover:text-primary border-b border-outline-variant/10 flex items-center justify-between">
+        <span>Modèle Signature</span>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+      </a>
+      <a href="sur-mesure.html" class="py-2 text-primary font-semibold border-b border-outline-variant/10 flex items-center justify-between">
+        <span>Atelier Sur-Mesure</span>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+      </a>
+      <a href="index.html#savoir-faire" class="py-2 text-on-surface-variant hover:text-primary border-b border-outline-variant/10 flex items-center justify-between">
+        <span>Savoir-Faire &amp; Matières</span>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+      </a>
+      <a href="#hub-communaute" class="py-2 text-on-surface-variant hover:text-primary border-b border-outline-variant/10 flex items-center justify-between">
+        <span>Communauté &amp; Club VIP</span>
+        <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+      </a>
+    </nav>
+
+    <div class="pt-space-md border-t border-outline-variant/30 space-y-space-sm">
+      <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-tertiary-container text-on-tertiary font-label-button text-label-button shadow-sm">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span>Le Club WhatsApp</span>
+      </a>
+      <p class="font-body-sm text-[12px] text-center text-on-surface-variant italic">
+        Haute joaillerie textile • Fait main
+      </p>
+    </div>
+  </aside>
+
+  <!-- PIED DE PAGE -->
+  <footer class="w-full bg-surface-container-low mt-space-2xl border-t border-outline-variant/30">
+    <div class="max-w-[1280px] mx-auto px-margin-mobile lg:px-margin py-space-2xl">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-xl pb-space-xl border-b border-outline-variant/20">
+        
+        <div class="space-y-space-xs max-w-md">
+          <div class="flex items-center gap-space-xs mb-2">
+            <img src="assets/logo.jpg" alt="Logo Crokea" class="h-8 w-8 rounded-full object-cover mix-blend-multiply border border-primary/20"/>
+            <span class="font-headline-sm text-headline-sm text-primary italic">Crokea</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Bijoux d'art crochetés main &amp; perles fines. Chaque pièce incarne la poésie du fil végétal et la patience de l'artisanat d'exception.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-space-lg text-left md:text-right">
+          <div class="flex flex-col gap-space-sm">
+            <span class="font-label-caps text-label-caps text-primary uppercase">Maison d'Art</span>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="sur-mesure.html">Fait main sur commande</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="produit.html?id=crk-02">Modèle Signature</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="index.html#savoir-faire">Guide d'entretien &amp; matières</a>
+          </div>
+          <div class="flex flex-col gap-space-sm">
+            <span class="font-label-caps text-label-caps text-primary uppercase">Dialogue</span>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="https://wa.me/" target="_blank" rel="noopener noreferrer">WhatsApp direct</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook officiel</a>
+            <a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#hub-communaute">Club Privé VIP</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+        <p>© 2025 Crokea. Tous droits réservés.</p>
+        <p class="font-title-editorial text-title-editorial italic text-primary">L'élégance de la maille &amp; l'éclat minéral</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JS PARTAGÉ & CONFIGURATEUR -->
+  <script src="assets/js/crokea.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const state = {
+        shape: "Trèfle Porte-Bonheur",
+        palette: "Émeraude & Ivoire",
+        center: "Perle ronde",
+        metal: "Crochet or fin 24k",
+        note: "",
+        estimatedPriceFCFA: 19000,
+        previewImg: "https://lh3.googleusercontent.com/aida-public/AB6AXuBOJOy5D3ydCK9SfZveTmOXj-VPn0v3UXo8vrvVkuOV48AmNL9r5LqMeduZ5FHlKO4XK0Xa_uDX0ncHwB9bq9GY6tQO1LRE65ADz-xAZfwCAi8LOJGTh3X5BYGLT9AhCD39XK-yWrYBPTXkQJNoUph0VBwfqWj3joIWjggkOz3ZafdSOe3bD0R5KA6uQw5NzY4wHMk-pSZrKSOF45uOpeuL1GdmwgPXZwXXXzYbdVSa"
+      };
+
+      const summaryShape = document.getElementById("summary-shape");
+      const summaryPalette = document.getElementById("summary-palette");
+      const summaryHeart = document.getElementById("summary-heart");
+      const previewTag = document.getElementById("preview-tag");
+      const previewImage = document.getElementById("preview-image");
+      const whatsappBtn = document.getElementById("whatsapp-order-cta");
+      const selectedPaletteLabel = document.getElementById("selected-palette-label");
+      const customNoteInput = document.getElementById("custom-note");
+      const addCustomToCartBtn = document.getElementById("btn-add-custom-to-cart");
+
+      function updateUI() {
+        if (summaryShape) summaryShape.textContent = state.shape;
+        if (summaryPalette) summaryPalette.textContent = state.palette;
+        if (selectedPaletteLabel) selectedPaletteLabel.textContent = state.palette;
+        if (summaryHeart) summaryHeart.textContent = `${state.center} • ${state.metal}`;
+        if (previewTag) previewTag.textContent = `${state.shape.split(" ")[0]} • ${state.palette}`;
+        if (previewImage && state.previewImg) previewImage.src = state.previewImg;
+
+        let message = `Bonjour l'Atelier Crokea ! Je souhaite commander une création sur-mesure :\n\n`;
+        message += `• Forme florale : ${state.shape}\n`;
+        message += `• Palette de coton : ${state.palette}\n`;
+        message += `• Ornement central : ${state.center}\n`;
+        message += `• Attache / Monture : ${state.metal}\n`;
+        if (state.note.trim()) {
+          message += `• Souhait particulier : ${state.note.trim()}\n`;
+        }
+        message += `• Tarif indicatif : 19 000 FCFA (~29 €)\n\n`;
+        message += `Pouvez-vous me confirmer le nuancier et le délai de tissage à l'atelier ? Merci !`;
+
+        const target = CROKEA_CONFIG.whatsappNumber ? `https://wa.me/${CROKEA_CONFIG.whatsappNumber}` : `https://wa.me/`;
+        if (whatsappBtn) {
+          whatsappBtn.href = `${target}?text=${encodeURIComponent(message)}`;
+        }
+      }
+
+      // Étape 1 : Formes
+      const shapeButtons = document.querySelectorAll(".shape-btn");
+      shapeButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          shapeButtons.forEach(b => {
+            b.classList.remove("bg-surface-container-high", "shadow-sm", "ring-2", "ring-primary-container");
+            b.classList.add("bg-surface-container");
+            const ind = b.querySelector(".shape-indicator");
+            if (ind) {
+              ind.classList.remove("flex", "bg-tertiary-container", "text-on-tertiary");
+              ind.classList.add("hidden");
+            }
+          });
+
+          btn.classList.add("bg-surface-container-high", "shadow-sm", "ring-2", "ring-primary-container");
+          btn.classList.remove("bg-surface-container");
+          const curInd = btn.querySelector(".shape-indicator");
+          if (curInd) {
+            curInd.classList.remove("hidden");
+            curInd.classList.add("flex", "bg-tertiary-container", "text-on-tertiary");
+          }
+
+          state.shape = btn.getAttribute("data-title") || "Trèfle Porte-Bonheur";
+          const newImg = btn.getAttribute("data-img");
+          if (newImg) state.previewImg = newImg;
+          updateUI();
+        });
+      });
+
+      // Étape 2 : Palettes
+      const paletteButtons = document.querySelectorAll(".palette-btn");
+      paletteButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          paletteButtons.forEach(b => {
+            b.classList.remove("bg-primary-container", "text-on-primary", "shadow-sm");
+            b.classList.add("bg-surface-container", "text-on-surface");
+          });
+          btn.classList.add("bg-primary-container", "text-on-primary", "shadow-sm");
+          btn.classList.remove("bg-surface-container", "text-on-surface");
+          state.palette = btn.getAttribute("data-palette") || "Émeraude & Ivoire";
+          updateUI();
+        });
+      });
+
+      // Étape 3 : Cœur
+      const centerButtons = document.querySelectorAll(".center-btn");
+      centerButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          centerButtons.forEach(b => {
+            b.classList.remove("bg-surface-container-high", "shadow-sm", "ring-2", "ring-primary-container");
+            b.classList.add("bg-surface-container");
+          });
+          btn.classList.add("bg-surface-container-high", "shadow-sm", "ring-2", "ring-primary-container");
+          btn.classList.remove("bg-surface-container");
+          const heading = btn.querySelector("p");
+          state.center = heading ? heading.textContent : "Perle ronde";
+          updateUI();
+        });
+      });
+
+      // Étape 4 : Métal
+      const metalButtons = document.querySelectorAll(".metal-btn");
+      metalButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          metalButtons.forEach(b => {
+            b.classList.remove("bg-primary-container", "text-on-primary");
+            b.classList.add("bg-surface-container", "text-on-surface");
+          });
+          btn.classList.add("bg-primary-container", "text-on-primary");
+          btn.classList.remove("bg-surface-container", "text-on-surface");
+          state.metal = btn.getAttribute("data-metal") || "Crochet or fin 24k";
+          updateUI();
+        });
+      });
+
+      // Note libre
+      if (customNoteInput) {
+        customNoteInput.addEventListener("input", (e) => {
+          state.note = e.target.value;
+          updateUI();
+        });
+      }
+
+      // Ajout création sur-mesure au panier
+      if (addCustomToCartBtn) {
+        addCustomToCartBtn.addEventListener("click", () => {
+          window.crokeaCart.addItem({
+            id: 'crk-bespoke-' + Date.now(),
+            title: `Sur-Mesure : ${state.shape}`,
+            priceFCFA: state.estimatedPriceFCFA,
+            image: state.previewImg,
+            shade: state.palette,
+            clasp: `${state.center} • ${state.metal}`,
+            sku: '#CRK-SURMESURE',
+            quantity: 1
+          });
+        });
+      }
+
+      updateUI();
+    });
+  </script>
+</body>
+</html>

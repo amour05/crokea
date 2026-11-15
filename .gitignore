@@ -1,0 +1,19 @@
+# Vercel & Node
+.vercel
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers temporaires & scratch
+scratch/
+*.log
+
+# Archives et maquettes sources
+stitch_crokea_boutique_crochet_showcase.zip
+stitch_crokea_boutique_crochet_showcase/
+WhatsApp Image 2026-11-04 at 16.52.50.jpeg
+
+# Fichiers système
+.DS_Store
+Thumbs.db

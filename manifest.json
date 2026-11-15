@@ -1,0 +1,16 @@
+{
+  "name": "CROKEA — Haute Joaillerie Textile",
+  "short_name": "CROKEA",
+  "description": "Boutique d'artisanat d'exception : bijoux crochetés main en fil de coton d'Égypte et perles de culture véritables.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fff8f5",
+  "theme_color": "#543214",
+  "icons": [
+    {
+      "src": "assets/logo.jpg",
+      "sizes": "500x500",
+      "type": "image/jpeg"
+    }
+  ]
+}
