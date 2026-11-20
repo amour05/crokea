@@ -165,144 +165,210 @@
     // --- CATALOGUE DES VRAIES CRÉATIONS CROKÉA (PHOTOS FACEBOOK HD) ---
     const PRODUCTS_DATA = [
       {
-        id: "crk-01",
-        title: "Trèfle Émeraude & Perle",
-        subtitle: "Boucles d'oreilles au crochet vert olive noble, rehaussées d'une délicate perle suspendue.",
-        quote: "« Le trèfle à quatre mailles, symbole porte-bonheur et de féminité. Une création légère et éclatante, idéale pour sublimer tes tenues du quotidien comme tes sorties. »",
+        id: "crk-roses-poudrees",
+        title: "Roses Poudrées & Chaînettes de Perles",
+        subtitle: "Roses 3D en crochet rose poudré soyeux, rehaussées de fines chaînettes pendantes et perles gouttes nacrées.",
+        quote: "« La quintessence de la féminité et de l'élégance Crokéa. Le mouvement fluide des chaînettes et la pureté des perles subliment le port de tête. »",
+        priceFCFA: 21000,
+        priceEUR: 32,
+        category: "rosaces",
+        weight: "3,4 g (poids plume)",
+        badge: "★ Modèle Signature",
+        image: "assets/products/crokea_roses_poudrees_chaine_perles.jpg",
+        thumbnails: [
+          "assets/products/crokea_roses_poudrees_chaine_perles.jpg",
+          "assets/products/crokea_roses_velours_magenta.jpg",
+          "assets/products/crokea_roses_ecarlates_3d.jpg",
+          "assets/products/crokea_hd_2.jpg"
+        ],
+        shades: [
+          { name: "Rose Poudré & Argent", color: "#E8C2B8" },
+          { name: "Blanc Cérémonie & Or", color: "#F4EFE6" },
+          { name: "Nude Romantique", color: "#D9A99B" }
+        ]
+      },
+      {
+        id: "crk-trefle-vert",
+        title: "Trèfle Porte-Bonheur & Doubles Perles",
+        subtitle: "Trèfle à quatre feuilles en crochet vert prairie lumineuse, suspendu sous un duo de perles blanches nacrées.",
+        quote: "« Le trèfle à 4 mailles porte-bonheur, symbole d'espoir et de fraîcheur. Une création ultra-légère pour illuminer le quotidien avec poésie. »",
         priceFCFA: 16500,
         priceEUR: 25,
         category: "trefles",
         weight: "2,8 g (ultra-légère)",
-        badge: "Fait main avec amour",
-        image: "assets/products/crokea_hd_1.jpg",
+        badge: "★ Coup de Cœur",
+        image: "assets/products/crokea_trefle_vert_perles.jpg",
         thumbnails: [
+          "assets/products/crokea_trefle_vert_perles.jpg",
+          "assets/products/crokea_duo_dentelle_amazone.jpg",
           "assets/products/crokea_hd_1.jpg",
-          "assets/products/crokea_hd_2.jpg",
-          "assets/products/crokea_hd_3.jpg",
-          "assets/products/crokea_hd_5.jpg"
-        ],
-        shades: [
-          { name: "Vert Émeraude", color: "#284112" },
-          { name: "Sauge Douce", color: "#8FAE73" },
-          { name: "Ivoire & Or", color: "#F4EFE6" },
-          { name: "Noir Profond", color: "#261910" }
-        ]
-      },
-      {
-        id: "crk-02",
-        title: "Rosaces Crokéa – Rose Poudré & Nacre",
-        subtitle: "Notre création emblématique : pétales au crochet d'une douceur infinie enserrant une nacre lumineuse.",
-        quote: "« Tu n’as pas besoin d’attendre une occasion pour mettre cette tenue que tu aimes. 💙 Les rosaces Crokéa apportent cette touche de poésie et d'élégance naturelle qui te fait rayonner instantanément. »",
-        priceFCFA: 18000,
-        priceEUR: 28,
-        category: "rosaces",
-        weight: "3,2 g (poids plume)",
-        badge: "★ Modèle Signature",
-        image: "assets/products/crokea_hd_2.jpg",
-        thumbnails: [
-          "assets/products/crokea_hd_2.jpg",
-          "assets/products/crokea_hd_1.jpg",
-          "assets/products/crokea_hd_8.jpg",
-          "assets/products/crokea_hd_10.jpg"
-        ],
-        shades: [
-          { name: "Rose Poudré", color: "#E8C2B8" },
-          { name: "Vert Forêt", color: "#2C4A28" },
-          { name: "Fuchsia Vibrant", color: "#B82B57" },
-          { name: "Blanc Crème Nacré", color: "#F4EFE6" },
-          { name: "Terracotta Solaire", color: "#B45A3C" }
-        ]
-      },
-      {
-        id: "crk-03",
-        title: "Duo Pétales Fuchsia & Nacre",
-        subtitle: "Un contraste vibrant et joyeux. Mailles éclatantes au crochet et éclat nacré pour illuminer ton visage.",
-        quote: "« La vivacité du fuchsia met en lumière la délicatesse des perles. Une création affirmée et chaleureuse qui donne instantanément du peps à toute tenue. »",
-        priceFCFA: 15000,
-        priceEUR: 23,
-        category: "rosaces",
-        weight: "3,0 g",
-        badge: "Éclat & Vitalité",
-        image: "assets/products/crokea_hd_3.jpg",
-        thumbnails: [
-          "assets/products/crokea_hd_3.jpg",
-          "assets/products/crokea_hd_5.jpg",
-          "assets/products/crokea_hd_7.jpg",
-          "assets/products/crokea_hd_9.jpg"
-        ],
-        shades: [
-          { name: "Fuchsia Vibrant", color: "#B82B57" },
-          { name: "Pourpre Royal", color: "#543214" },
-          { name: "Corail Doux", color: "#E8A298" }
-        ]
-      },
-      {
-        id: "crk-04",
-        title: "Fleur Solaire & Perle Baroque",
-        subtitle: "Inspirée de la lumière d'Afrique. Fleur tissée en fil ocre doré et parée d'une perle baroque singulière.",
-        quote: "« Chaque perle baroque est unique, tout comme toi. Alliée à la chaleur de la maille dorée, elle crée une parure rayonnante pleine de personnalité. »",
-        priceFCFA: 19500,
-        priceEUR: 30,
-        category: "solaires",
-        weight: "3,5 g",
-        badge: "Édition Lumineuse",
-        image: "assets/products/crokea_hd_5.jpg",
-        thumbnails: [
-          "assets/products/crokea_hd_5.jpg",
-          "assets/products/crokea_hd_3.jpg",
-          "assets/products/crokea_hd_6.jpg",
           "assets/products/crokea_hd_8.jpg"
         ],
         shades: [
-          { name: "Jaune Solaire / Ocre", color: "#D4A017" },
-          { name: "Terracotta Solaire", color: "#B45A3C" },
-          { name: "Lin Naturel", color: "#E6E2DC" }
+          { name: "Vert Prairie & Perles", color: "#4CAF50" },
+          { name: "Vert Émeraude Profond", color: "#1B5E20" },
+          { name: "Blanc Nacré & Or", color: "#F4EFE6" }
         ]
       },
       {
-        id: "crk-05",
-        title: "Trèfle Blanc Nacré & Fil d'Or",
-        subtitle: "Un trèfle d'une élégance pure au crochet immaculé, discrètement entrelacé d'un fil scintillant.",
-        quote: "« La pureté du blanc rencontre la finesse du crochet et la lumière des perles. Une paire féerique pensée pour tes célébrations, mariages et moments inoubliables. »",
-        priceFCFA: 17000,
-        priceEUR: 26,
-        category: "trefles",
-        weight: "2,9 g",
-        badge: "Élégance Cérémonie",
-        image: "assets/products/crokea_hd_8.jpg",
+        id: "crk-trio-terres",
+        title: "Trio Terres Précieuses – Nuances Café",
+        subtitle: "Cascade de trois disques crochetés aux teintes chaudes et terreuses : écru lin, ocre caramel et chocolat profond.",
+        quote: "« L'harmonie des teintes de la terre africaine. Trois disques au crochet texturé qui ondulent avec grâce au moindre de vos mouvements. »",
+        priceFCFA: 18000,
+        priceEUR: 28,
+        category: "disques",
+        weight: "3,5 g (confort absolu)",
+        badge: "Nouvelle Collection",
+        image: "assets/products/crokea_trio_terres_precieuses.jpg",
         thumbnails: [
-          "assets/products/crokea_hd_8.jpg",
-          "assets/products/crokea_hd_10.jpg",
-          "assets/products/crokea_hd_2.jpg",
-          "assets/products/crokea_hd_7.jpg"
+          "assets/products/crokea_trio_terres_precieuses.jpg",
+          "assets/products/crokea_trio_eclipse_bleue.jpg",
+          "assets/products/crokea_tournesol_solaire_cristal.jpg",
+          "assets/products/crokea_hd_5.jpg"
         ],
         shades: [
-          { name: "Blanc Nacré & Or", color: "#F4EFE6" },
-          { name: "Argent & Ivoire", color: "#CAC6C0" },
-          { name: "Rose Pâle & Or", color: "#F8DDCF" }
+          { name: "Nuances Café & Caramel", color: "#543214" },
+          { name: "Terracotta & Nude", color: "#B45A3C" },
+          { name: "Ocre Solaire & Moka", color: "#D4A017" }
         ]
       },
       {
-        id: "crk-06",
-        title: "Camélia Écru & Micro-Perles",
-        subtitle: "Courbes délicates et superposition de mailles évoquant le pétale de camélia sous la rosée matinale.",
-        quote: "« Hommage à la fleur de camélia : un tissage tout en relief et délicatesse, complété par trois micro-perles pendantes en cascade douce. »",
-        priceFCFA: 18500,
-        priceEUR: 28,
+        id: "crk-roses-ecarlates",
+        title: "Roses Écarlates Passion 3D",
+        subtitle: "Roses romantiques sculptées en mailles 3D rouge vif flamboyant, garnies de délicates feuilles vertes au calice.",
+        quote: "« La rose rouge immortelle, façonnée maille après maille. Un bijou sculptural captivant pour sublimer ta sensualité et ton audace. »",
+        priceFCFA: 17500,
+        priceEUR: 27,
         category: "rosaces",
-        weight: "3,3 g",
-        badge: "Douceur Poétique",
-        image: "assets/products/crokea_hd_10.jpg",
+        weight: "3,1 g (légèreté plume)",
+        badge: "Passion Féminine",
+        image: "assets/products/crokea_roses_ecarlates_3d.jpg",
         thumbnails: [
-          "assets/products/crokea_hd_10.jpg",
-          "assets/products/crokea_hd_9.jpg",
-          "assets/products/crokea_hd_8.jpg",
+          "assets/products/crokea_roses_ecarlates_3d.jpg",
+          "assets/products/crokea_roses_velours_magenta.jpg",
+          "assets/products/crokea_roses_poudrees_chaine_perles.jpg",
+          "assets/products/crokea_hd_3.jpg"
+        ],
+        shades: [
+          { name: "Rouge Passion & Vert", color: "#D32F2F" },
+          { name: "Grenat Sombre & Sauge", color: "#880E4F" },
+          { name: "Corail Éclatant", color: "#FF7043" }
+        ]
+      },
+      {
+        id: "crk-trio-bleu",
+        title: "Trio Éclipse Bleue – Dégradé Océan",
+        subtitle: "Trois disques concentriques au crochet dans un sublime dégradé bleu ciel, bleu roi et bleu nuit profond.",
+        quote: "« Tu n’as pas besoin d’attendre une occasion pour mettre cette tenue que tu aimes. 💙 La fraîcheur des nuances océan pour un port de tête royal. »",
+        priceFCFA: 18000,
+        priceEUR: 28,
+        category: "disques",
+        weight: "3,5 g (ultra-confort)",
+        badge: "★ Favori Atelier",
+        image: "assets/products/crokea_trio_eclipse_bleue.jpg",
+        thumbnails: [
+          "assets/products/crokea_trio_eclipse_bleue.jpg",
+          "assets/products/crokea_fleurs_lagon_perlees.jpg",
+          "assets/products/crokea_trio_terres_precieuses.jpg",
+          "assets/products/crokea_hd_2.jpg"
+        ],
+        shades: [
+          { name: "Dégradé Océan (Bleu Ciel à Nuit)", color: "#1976D2" },
+          { name: "Bleu Majorelle & Nacre", color: "#0D47A1" },
+          { name: "Indigo & Céleste", color: "#283593" }
+        ]
+      },
+      {
+        id: "crk-tournesol-solaire",
+        title: "Tournesol Solaire & Goutte de Cristal",
+        subtitle: "Pétales dentelés jaune or au crochet enserrant un cœur cacao, ornés d'une perle de cristal craquelé étincelante.",
+        quote: "« Rayonne comme le soleil de Cotonou ! Le tournesol Crokéa capte la lumière naturelle avec sa goutte de cristal pour une énergie éclatante. »",
+        priceFCFA: 19000,
+        priceEUR: 29,
+        category: "solaires",
+        weight: "3,3 g",
+        badge: "Éclat Solaire",
+        image: "assets/products/crokea_tournesol_solaire_cristal.jpg",
+        thumbnails: [
+          "assets/products/crokea_tournesol_solaire_cristal.jpg",
+          "assets/products/crokea_trio_terres_precieuses.jpg",
+          "assets/products/crokea_hd_5.jpg",
+          "assets/products/crokea_hd_6.jpg"
+        ],
+        shades: [
+          { name: "Jaune Solaire & Cacao", color: "#FBC02D" },
+          { name: "Ocre Doré & Moka", color: "#D4A017" },
+          { name: "Cuivre Flamboyant", color: "#E65100" }
+        ]
+      },
+      {
+        id: "crk-fleurs-lagon",
+        title: "Fleurs Lagon & Perles d'Eau Céleste",
+        subtitle: "Grandes fleurs tropicales à cinq pétales galbés au crochet bleu turquoise / cyan, surmontées de perles irisées.",
+        quote: "« Une vague de douceur tropicale. Des pétales en relief qui capturent la fraîcheur des lagunes avec une légèreté plume inégalée. »",
+        priceFCFA: 17000,
+        priceEUR: 26,
+        category: "rosaces",
+        weight: "2,9 g (ultra-légère)",
+        badge: "Fraîcheur Tropicale",
+        image: "assets/products/crokea_fleurs_lagon_perlees.jpg",
+        thumbnails: [
+          "assets/products/crokea_fleurs_lagon_perlees.jpg",
+          "assets/products/crokea_trio_eclipse_bleue.jpg",
+          "assets/products/crokea_trefle_vert_perles.jpg",
+          "assets/products/crokea_hd_2.jpg"
+        ],
+        shades: [
+          { name: "Bleu Lagon & Perle Irisée", color: "#00ACC1" },
+          { name: "Azur Doux", color: "#4DD0E1" },
+          { name: "Menthe Glacée & Nacre", color: "#80CBC4" }
+        ]
+      },
+      {
+        id: "crk-duo-amazone",
+        title: "Duo Dentelle Végétale – Nuances Amazone",
+        subtitle: "Double corolle aux bordures festonnées au crochet vert anis éclatant et vert forêt intense.",
+        quote: "« L'esprit de la nature et de la canopée. Deux disques ajourés d'une finesse incomparable qui dansent délicatement à tes oreilles. »",
+        priceFCFA: 16000,
+        priceEUR: 25,
+        category: "disques",
+        weight: "2,7 g",
+        badge: "Pure Nature",
+        image: "assets/products/crokea_duo_dentelle_amazone.jpg",
+        thumbnails: [
+          "assets/products/crokea_duo_dentelle_amazone.jpg",
+          "assets/products/crokea_trefle_vert_perles.jpg",
+          "assets/products/crokea_trio_terres_precieuses.jpg",
           "assets/products/crokea_hd_1.jpg"
         ],
         shades: [
-          { name: "Écru Chaud", color: "#FFF1EA" },
-          { name: "Chocolat Poudré", color: "#543214" },
-          { name: "Vert Amande", color: "#CCEDAC" }
+          { name: "Vert Anis & Forêt", color: "#7CB342" },
+          { name: "Émeraude & Kaki", color: "#2E7D32" },
+          { name: "Sauge Douce & Olive", color: "#8FAE73" }
+        ]
+      },
+      {
+        id: "crk-rose-magenta",
+        title: "Boutons de Rose Velours Magenta",
+        subtitle: "Boutons de rose sculptés au crochet fuchsia magenta vibrant, montés sur attaches hypoallergéniques ultra-légères.",
+        quote: "« La vivacité du magenta pour donner du caractère et de l'éclat à ton teint. Une confection minutieuse en mailles serrées d'une tenue parfaite. »",
+        priceFCFA: 15500,
+        priceEUR: 24,
+        category: "rosaces",
+        weight: "2,6 g",
+        badge: "Éclat Vibrant",
+        image: "assets/products/crokea_roses_velours_magenta.jpg",
+        thumbnails: [
+          "assets/products/crokea_roses_velours_magenta.jpg",
+          "assets/products/crokea_roses_ecarlates_3d.jpg",
+          "assets/products/crokea_roses_poudrees_chaine_perles.jpg",
+          "assets/products/crokea_hd_3.jpg"
+        ],
+        shades: [
+          { name: "Magenta Fuchsia", color: "#C2185B" },
+          { name: "Pourpre Impérial", color: "#7B1FA2" },
+          { name: "Framboise Écrasée", color: "#AD1457" }
         ]
       }
     ];
@@ -313,28 +379,28 @@
         name: "Aïcha G.",
         location: "Cotonou (Haie Vive)",
         text: "J'avais peur que ce soit lourd aux oreilles, mais c'est bluffant ! C'est tellement léger qu'on oublie qu'on les porte. Je n'ai reçu que des compliments au travail !",
-        model: "Rosace Rose Poudré & Nacre",
+        model: "Roses Poudrées & Chaînettes",
         stars: 5
       },
       {
         name: "Béatrice K.",
         location: "Calavi",
-        text: "La qualité du crochet est incroyable, les finitions sont soignées jusqu'au fermoir. Le rose poudré va avec toutes mes tenues. C'est du vrai artisanat !",
-        model: "Rosace Rose Poudré & Nacre",
+        text: "La qualité du crochet est incroyable, les finitions sont soignées jusqu'au fermoir. Le trio bleu est sublime et tellement léger. C'est du vrai artisanat !",
+        model: "Trio Éclipse Bleue – Dégradé Océan",
         stars: 5
       },
       {
         name: "Mireille D.",
         location: "Paris (Diaspora béninoise)",
         text: "J'ai commandé pour le mariage de ma sœur. Colis bien reçu et soigné. Portées toute la journée sans aucune douleur. Fière de porter le savoir-faire de chez nous.",
-        model: "Trèfle Blanc Nacré & Fil d'Or",
+        model: "Trèfle Porte-Bonheur & Doubles Perles",
         stars: 5
       },
       {
         name: "Sandrine A.",
         location: "Porto-Novo",
         text: "L'échange sur WhatsApp pour assortir les couleurs à mon tissu était super sympa et très rapide. Une paire sur-mesure au top. Je recommande à 100% !",
-        model: "Fleur Solaire & Perle",
+        model: "Tournesol Solaire & Goutte de Cristal",
         stars: 5
       }
     ];
@@ -722,8 +788,8 @@
                       
                       <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-surface-container aspect-[4/5] border border-outline-variant/30 group">
                         <img
-                          src="assets/products/crokea_hd_2.jpg"
-                          alt="Rosaces Crokéa Fait Main"
+                          src="assets/products/crokea_roses_poudrees_chaine_perles.jpg"
+                          alt="Roses Poudrées & Chaînettes de Perles Crokéa"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
@@ -744,12 +810,12 @@
                         <div className="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-surface-container-lowest/95 backdrop-blur-md shadow-xl border border-outline-variant/30 flex items-center justify-between gap-3">
                           <div className="min-w-0">
                             <p className="font-label-caps text-[10px] uppercase text-tertiary-container tracking-wider font-bold">Modèle Signature</p>
-                            <p className="font-headline-sm text-base text-primary font-bold truncate">Rosaces Crokéa – Rose Poudré</p>
-                            <p className="text-xs font-semibold text-primary-container">18 000 FCFA</p>
+                            <p className="font-headline-sm text-base text-primary font-bold truncate">Roses Poudrées &amp; Chaînettes</p>
+                            <p className="text-xs font-semibold text-primary-container">21 000 FCFA</p>
                           </div>
                           <button
                             type="button"
-                            onClick={() => openQuickview(PRODUCTS_DATA[1])}
+                            onClick={() => openQuickview(PRODUCTS_DATA[0])}
                             className="px-4 py-2 rounded-full bg-primary-container hover:bg-primary text-white text-xs font-bold shadow-sm transition-all shrink-0 flex items-center gap-1"
                           >
                             <span>Voir</span>
@@ -943,8 +1009,9 @@
                   {/* Filtres de Catégories Simples */}
                   <div className="flex flex-wrap items-center gap-2">
                     {[
-                      { id: 'all', label: 'Toutes les créations' },
-                      { id: 'rosaces', label: 'Rosaces & Fleurs' },
+                      { id: 'all', label: 'Toutes les créations (9)' },
+                      { id: 'rosaces', label: 'Roses & Fleurs 3D' },
+                      { id: 'disques', label: 'Trios & Dentelles' },
                       { id: 'trefles', label: 'Trèfles' },
                       { id: 'solaires', label: 'Solaires' }
                     ].map(cat => (
@@ -1071,6 +1138,55 @@
                   >
                     Voir les modalités
                   </button>
+                </div>
+
+              </div>
+            </section>
+
+            {/* ------------------------------------------------------- */}
+            {/* SECTION GALERIE DE L'ATELIER : LES 9 CRÉATIONS RÉELLES  */}
+            {/* ------------------------------------------------------- */}
+            <section className="w-full py-12 lg:py-16 bg-surface-container-lowest border-t border-outline-variant/20">
+              <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+                  <div>
+                    <span className="font-label-caps text-xs uppercase text-tertiary-container tracking-widest font-bold block mb-1">Authenticité Atelier</span>
+                    <h3 className="font-headline-lg text-2xl sm:text-3xl text-primary-container">L'Écrin Crokéa en Images Réelles</h3>
+                    <p className="font-body-md text-xs sm:text-sm text-on-surface-variant mt-1">
+                      Chaque paire est soigneusement présentée sur sa carte signature. Cliquez sur une création pour l'admirer ou la commander.
+                    </p>
+                  </div>
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-primary font-bold text-xs">
+                    <span className="material-symbols-outlined text-[16px] text-emerald-600">verified</span>
+                    <span>9 Modèles 100% Fait Main</span>
+                  </div>
+                </div>
+
+                {/* Grille mosaïque des 9 créations réelles */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-9 gap-3">
+                  {PRODUCTS_DATA.map((p, idx) => (
+                    <div
+                      key={p.id}
+                      onClick={() => openQuickview(p)}
+                      className="group cursor-pointer rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/30 hover:border-primary/50 shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col"
+                    >
+                      <div className="aspect-[3/4] overflow-hidden bg-surface-container-high relative">
+                        <img
+                          src={p.image}
+                          alt={p.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <span className="p-2 rounded-full bg-white/90 text-primary shadow-sm material-symbols-outlined text-[18px]">visibility</span>
+                        </div>
+                      </div>
+                      <div className="p-2 bg-surface-container-lowest text-center">
+                        <p className="text-[11px] font-bold text-primary truncate">{p.title.split('–')[0].split('&')[0].trim()}</p>
+                        <p className="text-[10px] font-semibold text-primary-container">{p.priceFCFA.toLocaleString('fr-FR')} F</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
 
               </div>
